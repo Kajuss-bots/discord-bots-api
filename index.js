@@ -1,9 +1,7 @@
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 import { Client, GatewayIntentBits } from "discord.js";
 
-dotenv.config();
 
 const app = express();
 app.use(cors());
@@ -83,3 +81,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 API running on port ${PORT}`);
 });
+
